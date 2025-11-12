@@ -1,0 +1,372 @@
+.summit-growth-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+/* Glowing Particles/Fireflies */
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: #fbbf24;
+  border-radius: 50%;
+  box-shadow: 
+    0 0 8px rgba(251, 191, 36, 0.8),
+    0 0 16px rgba(251, 191, 36, 0.5);
+  animation: particle-twinkle infinite;
+}
+
+@keyframes particle-twinkle {
+  0%, 100% { 
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+
+/* Butterflies */
+.butterflies {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.butterfly {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  animation: butterfly-fly 12s ease-in-out infinite;
+}
+
+.butterfly::before,
+.butterfly::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: linear-gradient(135deg, #f97316 0%, #fbbf24 100%);
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.8);
+}
+
+.butterfly::before {
+  left: 0;
+  transform: rotate(-10deg);
+}
+
+.butterfly::after {
+  right: 0;
+  transform: rotate(10deg);
+}
+
+.butterfly-1 {
+  top: 15%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.butterfly-2 {
+  top: 20%;
+  right: 20%;
+  animation-delay: 2s;
+}
+
+.butterfly-3 {
+  bottom: 25%;
+  left: 10%;
+  animation-delay: 4s;
+}
+
+@keyframes butterfly-fly {
+  0%, 100% { 
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% { 
+    transform: translate(50px, -40px) rotate(15deg);
+  }
+  50% { 
+    transform: translate(100px, 30px) rotate(-15deg);
+  }
+  75% { 
+    transform: translate(50px, 50px) rotate(10deg);
+  }
+}
+
+/* Purple Flowers */
+.flowers {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: 3;
+  display: flex;
+  gap: 15px;
+}
+
+.flower {
+  width: 30px;
+  height: 40px;
+  position: relative;
+  animation: flower-glow 3s ease-in-out infinite;
+}
+
+.flower::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  background: radial-gradient(ellipse, #8b5cf6 0%, #6d28d9 100%);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.8);
+}
+
+.flower::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 40%;
+  background: #10b981;
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
+}
+
+.flower-1 {
+  animation-delay: 0s;
+}
+
+.flower-2 {
+  animation-delay: 0.5s;
+}
+
+.flower-3 {
+  animation-delay: 1s;
+}
+
+@keyframes flower-glow {
+  0%, 100% { 
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/* Glowing Mushrooms */
+.mushrooms {
+  position: absolute;
+  bottom: 8%;
+  right: 8%;
+  z-index: 3;
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.mushroom {
+  position: relative;
+  animation: mushroom-glow 3s ease-in-out infinite;
+}
+
+.mushroom::before {
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 25px;
+  background: linear-gradient(135deg, #92400e 0%, #78350f 100%);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  box-shadow: 0 0 15px rgba(146, 64, 14, 0.6);
+}
+
+.mushroom::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 20px;
+  background: #10b981;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+.mushroom-1 {
+  animation-delay: 0s;
+}
+
+.mushroom-1::before {
+  width: 40px;
+  height: 28px;
+}
+
+.mushroom-2 {
+  animation-delay: 0.8s;
+}
+
+.mushroom-2::before {
+  width: 30px;
+  height: 22px;
+}
+
+@keyframes mushroom-glow {
+  0%, 100% { 
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+/* Text Content */
+.text-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  animation: text-fade-in 1s ease-out;
+}
+
+@keyframes text-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.top-text,
+.bottom-text {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  color: #10b981;
+  text-shadow: 
+    0 0 20px rgba(16, 185, 129, 0.8),
+    0 0 40px rgba(16, 185, 129, 0.6),
+    0 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: 500;
+  animation: text-glow 3s ease-in-out infinite;
+}
+
+@keyframes text-glow {
+  0%, 100% { 
+    text-shadow: 
+      0 0 20px rgba(16, 185, 129, 0.8),
+      0 0 40px rgba(16, 185, 129, 0.6),
+      0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  50% { 
+    text-shadow: 
+      0 0 30px rgba(16, 185, 129, 1),
+      0 0 60px rgba(16, 185, 129, 0.8),
+      0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.percentage-text {
+  font-size: clamp(5rem, 15vw, 12rem);
+  font-weight: 900;
+  color: #ffff;
+  text-shadow: 
+    0 0 30px rgba(251, 191, 36, 0.9),
+    0 0 60px rgba(251, 191, 36, 0.7),
+    0 0 90px rgba(251, 191, 36, 0.5),
+    0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  letter-spacing: 8px;
+  line-height: 1;
+  animation: percentage-glow 2s ease-in-out infinite;
+  position: relative;
+}
+
+.percentage-text::before {
+  /* content: '10-150%'; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    transparent 50%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  mix-blend-mode: overlay;
+}
+
+@keyframes percentage-glow {
+  0%, 100% { 
+    text-shadow: 
+      0 0 30px rgba(251, 191, 36, 0.9),
+      0 0 60px rgba(251, 191, 36, 0.7),
+      0 0 90px rgba(251, 191, 36, 0.5),
+      0 4px 8px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+  }
+  50% { 
+    text-shadow: 
+      0 0 40px rgba(251, 191, 36, 1),
+      0 0 80px rgba(251, 191, 36, 0.9),
+      0 0 120px rgba(251, 191, 36, 0.7),
+      0 4px 8px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .summit-growth-container {
+    padding: 3rem 1rem;
+  }
+
+  .text-content {
+    gap: 1.5rem;
+  }
+
+  .butterfly {
+    width: 30px;
+    height: 30px;
+  }
+
+  .butterfly::before,
+  .butterfly::after {
+    width: 15px;
+    height: 20px;
+  }
+}
+
