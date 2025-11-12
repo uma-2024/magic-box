@@ -12,6 +12,19 @@
   align-items: center;
 }
 
+/* Middle Layer Image - Below subtitle */
+.middle-layer-image {
+  position: relative;
+  width: 50%;
+  margin: 2rem auto 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 /* Background Overlay - Linear on top and bottom */
 .background-overlay {
   position: absolute;

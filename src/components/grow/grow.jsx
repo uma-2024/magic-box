@@ -1,5 +1,6 @@
 import './grow.css'
-import backgroundImage from '../../assets/5.svg'
+import backgroundImage from '../../assets/8.svg'
+import middleLayerImage from '../../assets/Untitled design (2) (1).svg'
 
 function Grow() {
   const leftFeatures = [
@@ -106,6 +107,10 @@ function Grow() {
       <div className="title-section">
         <h1 className="grow-title">GROW WITH MAGIC BOX</h1>
         <p className="grow-subtitle">Rewards That Flow Like Energy</p>
+        {/* Middle Layer Image - Below subtitle */}
+       
+          <img src={middleLayerImage} alt="Middle Layer" className="middle-layer-image" />
+     
       </div>
 
       {/* Feature Boxes */}

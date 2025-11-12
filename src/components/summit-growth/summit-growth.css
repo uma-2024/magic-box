@@ -267,8 +267,8 @@
 
 .top-text,
 .bottom-text {
-  font-size: clamp(1.2rem, 3vw, 2rem);
-  color: #10b981;
+  font-size: clamp(1.2rem, 3vw, 4rem);
+  color: #71d3b2;
   text-shadow: 
     0 0 20px rgba(16, 185, 129, 0.8),
     0 0 40px rgba(16, 185, 129, 0.6),
@@ -352,6 +352,7 @@
 @media (max-width: 768px) {
   .summit-growth-container {
     padding: 3rem 1rem;
+    min-height: max-content;
   }
 
   .text-content {
