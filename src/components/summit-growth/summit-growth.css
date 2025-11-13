@@ -30,6 +30,8 @@
     0 0 8px rgba(251, 191, 36, 0.8),
     0 0 16px rgba(251, 191, 36, 0.5);
   animation: particle-twinkle infinite;
+  will-change: transform, opacity;
+  transform: translateZ(0); /* Force GPU acceleration */
 }
 
 @keyframes particle-twinkle {
@@ -368,6 +370,9 @@
   .butterfly::after {
     width: 15px;
     height: 20px;
+  }
+  .percentage-text {
+    font-size: 3.4rem;
   }
 }
 

@@ -1,5 +1,5 @@
 import './vision.css'
-import backgroundImage from '../../assets/2.svg'
+import backgroundImage from '../../assets/2.svg?url'
 
 function Vision() {
   return (

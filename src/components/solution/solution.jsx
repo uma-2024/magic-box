@@ -1,5 +1,5 @@
 import './solution.css'
-import backgroundImage from '../../assets/4.svg'
+import backgroundImage from '../../assets/4.svg?url'
 
 function Solution() {
   const features = [
@@ -84,7 +84,7 @@ function Solution() {
       {/* Right Side - Content */}
       <div className="content-section">
         {/* Title Section */}
-        <div className="title-section">
+        <div className="title-section2">
           <h1 className="solution-title">THE SOLUTION</h1>
           <p className="solution-subtitle">Introducing Magic Box The Decentralized World of Growth and Trust</p>
         </div>

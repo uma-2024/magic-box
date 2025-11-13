@@ -1,5 +1,5 @@
 import './summit-growth.css'
-import backgroundImage from '../../assets/7.svg'
+import backgroundImage from '../../assets/7.svg?url'
 
 function SummitGrowth() {
   return (
@@ -10,7 +10,7 @@ function SummitGrowth() {
 
       {/* Glowing Particles/Fireflies */}
       <div className="particles">
-        {Array.from({ length: 80 }).map((_, i) => (
+        {Array.from({ length: 40 }).map((_, i) => (
           <div 
             key={i} 
             className="particle" 

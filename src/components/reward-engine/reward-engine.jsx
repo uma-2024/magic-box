@@ -1,5 +1,5 @@
 import './reward-engine.css'
-import backgroundImage from '../../assets/6.svg'
+import backgroundImage from '../../assets/6.svg?url'
 
 function RewardEngine() {
   return (

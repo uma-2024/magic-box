@@ -29,6 +29,8 @@
   border-radius: 50%;
   box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
   animation: star-twinkle infinite;
+  will-change: transform, opacity;
+  transform: translateZ(0); /* Force GPU acceleration */
 }
 
 @keyframes star-twinkle {
@@ -129,7 +131,7 @@
   }
 }
 
-.slogan {
+.slogan2 {
   font-size: clamp(1.2rem, 3vw, 2rem);
   color: #ffffff;
   text-shadow: 
@@ -242,5 +244,9 @@
   .buy-button {
     padding: 1rem 2rem;
   }
+  .headline-line-1,
+.headline-line-2 {
+  font-size: 3rem;
+}
 }
 

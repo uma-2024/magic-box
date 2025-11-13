@@ -1,5 +1,5 @@
 import './problem.css'
-import backgroundImage from '../../assets/3.svg'
+import backgroundImage from '../../assets/3.svg?url'
 
 function Problem() {
   const challenges = [

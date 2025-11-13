@@ -1,6 +1,6 @@
 import './grow.css'
-import backgroundImage from '../../assets/8.svg'
-import middleLayerImage from '../../assets/Untitled design (2) (1).svg'
+import backgroundImage from '../../assets/8.svg?url'
+import middleLayerImage from '../../assets/Untitled design (2) (1).svg?url'
 
 function Grow() {
   const leftFeatures = [
@@ -25,7 +25,7 @@ function Grow() {
       
       {/* Background Particles */}
       <div className="background-particles">
-        {Array.from({ length: 50 }).map((_, i) => (
+        {Array.from({ length: 25 }).map((_, i) => (
           <div 
             key={i} 
             className="sparkle" 

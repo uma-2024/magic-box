@@ -1,5 +1,5 @@
 import './magic-world.css'
-import backgroundImage from '../../assets/9.svg'
+import backgroundImage from '../../assets/9.svg?url'
 
 function MagicWorld() {
   const growthStages = [
@@ -18,7 +18,7 @@ function MagicWorld() {
     >
       {/* Starry Background */}
       <div className="starry-background">
-        {Array.from({ length: 80 }).map((_, i) => (
+        {Array.from({ length: 40 }).map((_, i) => (
           <div 
             key={i} 
             className="star" 
